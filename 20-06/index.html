@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: black;
+            color: burlywood;
+            width: 35%;
+
+            padding: 1%;
+            margin: 1%;
+
+        }
+    </style>
+</head>
+<body>
+
+
+        <div>
+             <label>First Value : </label>
+             <input type="number" id="value1" placeholder="Enter the first value" />
+
+             <br />
+             <br/>
+             <label>Second Value : </label>
+             <input type="number" id="value2" placeholder="Enter the enter value" />
+            
+             <input type="submit" onclick="getValue()" value="add"/>
+            </div>
+
+            <div>
+                <h1 id="display"></h1>
+            </div>
+    
+    
+            <script>
+                function getValue(){
+                    let value1 = Number(document.getElementById("value1").value);
+                    let value2 = Number(document.getElementById("value2").value);
+                   // alert(value1+value2);
+                    document.getElementById("display").innerText=value1+value2;
+
+                    document.body.style.backgroundColor="red"
+                }
+                /*
+                    javascript is cross-platform,interpreted and object oriented 
+                    scripting language
+                    it can be used for server and client side 
+                    html css can create the static application
+                    js can create dynamic page (req and and res)
+
+                    1995 --> brendan eich --> liveScript (javascript)
+
+                    run jS
+                    ==========
+                    Modern Browser(chrome,edge,firefox)
+
+                */
+            </script>
+</body>
+</html>
